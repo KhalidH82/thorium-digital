@@ -1,0 +1,26 @@
+.card_container {
+    text-align: center;
+    h2 {
+        font-family: "Domine", serif;
+        font-size: 37px;
+        line-height: 132.9%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+    .card_content {
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-family: "Questrial", sans-serif;
+            font-size: 23px;
+            line-height: 132.9%;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #000000;
+            opacity: 0.51;
+        }
+    }
+}

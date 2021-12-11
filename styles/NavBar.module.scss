@@ -1,0 +1,35 @@
+nav {
+    .container {
+        height: 140px;
+        max-width: 1440px;
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .links {
+            display: flex;
+            flex-direction: column;
+            .top_links {
+                font-family: "Questrial", sans-serif;
+                font-size: 18.75px;
+                color: #000000;
+                list-style-type: none;
+                display: flex;
+                gap: 22px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .bottom_links {
+                font-family: "Questrial", sans-serif;
+                font-size: 20.75px;
+                list-style-type: none;
+                display: flex;
+                gap: 37px;
+                justify-content: flex-end;
+                align-items: center;
+                opacity: 0.6;
+            }
+        }
+    }
+}

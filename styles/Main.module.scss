@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    .main_image {
+        width: 50%;
+        margin-top: 100px;
+        padding-left: 75px;
+    }
+    .main_copy {
+        width: 50%;
+        padding-right: 100px;
+        .main_header {
+            margin-top: 210px;
+            font-family: "Domine", serif;
+            font-size: 62px;
+            line-height: 97.9%;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        .main_image {
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
+        .main_copy {
+            width: 100%;
+            margin-top: -300px;
+            padding: 100px;
+        }
+    }
+}

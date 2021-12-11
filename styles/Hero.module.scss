@@ -1,0 +1,96 @@
+.hero {
+    max-height: 680px;
+    background-color: #cb0007;
+    display: flex;
+    justify-content: space-between;
+    .hero_copy {
+        width: 50%;
+        padding: 125px 0px 0 100px;
+        .hero_header {
+            font-family: IvyPresto Display;
+            font-size: 80px;
+            color: #ffffff;
+            margin: 0;
+            span {
+                font-style: italic;
+            }
+        }
+        .hero_text {
+            font-family: "Questrial", sans-serif;
+            font-size: 18px;
+            line-height: 132.9%;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+        }
+        .hero_CTA {
+            width: 229px;
+            height: 60px;
+            background: #d7b344;
+            border-radius: 4px;
+            border: none;
+            font-family: "Questrial", sans-serif;
+            text-align: center;
+            letter-spacing: 0.08em;
+            color: #000000;
+            font-weight: bolder;
+            font-size: 18.75px;
+            text-transform: uppercase;
+        }
+        .hero_CTA:hover {
+            cursor: pointer;
+        }
+    }
+    .hero_image {
+        .hero_image1 {
+            margin-top: 25px;
+            img {
+                filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.32));
+                z-index: 20;
+                border-radius: 12px;
+            }
+        }
+        .hero_image2 {
+            position: relative;
+            left: 170px;
+            bottom: 35px;
+            z-index: 10;
+        }
+        .hero_image3 {
+            position: relative;
+            bottom: 305px;
+            left: 350px;
+            z-index: 20;
+            overflow: hidden;
+            width: 260px;
+            img {
+                filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.32));
+                border-radius: 12px;
+            }
+        }
+    }
+    .brand_logo {
+        position: relative;
+        top: 540px;
+        z-index: 99;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        max-height: 1040px;
+        .hero_copy {
+            width: 100%;
+            padding: 100px;
+        }
+        .hero_image {
+            align-self: center;
+            margin-top: -110px;
+        }
+        .brand_logo {
+            position: absolute;
+            left: 800px;
+            top: 1065px;
+        }
+    }
+}
